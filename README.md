@@ -35,7 +35,7 @@ python experiments.py --seed <seed> [--network-file filepath]
 - ``filepath``: path to a saved neural network (optional). If unspecified, trains and saves a neural network before analyzing it.
 
 **Analyzing results**  
-To obtain the quantitative results (as in Tables 1 and 2), you may run the ``Analyze_Interpretations.ipynb`` notebook. The qualitative results (as in Figs. 6 and 7) are automatically outputted as ``.png`` files.
+To obtain the quantitative results (as in Tables 1 and 2), you may run the ``analyze_interpretations.py`` script. The qualitative results (as in Figs. 6 and 7) are automatically outputted as ``.png`` files.
 
 Section 7.3
 -------------------------
