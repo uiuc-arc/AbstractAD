@@ -1,6 +1,6 @@
 Abstract Higher-Order Automatic Differentiation
 ==========
-This repository contains the implementation for the paper "A General Construction for Abstract Interpretation of Higher-Order Automatic Differentiation" (OOPSLA 2022) by Jacob Laurel, Rem Yang, Shubham Ugare, Robert Nagel, Gagandeep Singh, and Sasa Misailovic. For both the interval and zonotope domains, we implement abstract first- and second-order automatic differentiation. We use our technique to study (1) robustly explaining a neural network via their first and second derivatives and (2) computing the Lipschitz constant of neural networks.
+This repository contains the implementation for the paper "A General Construction for Abstract Interpretation of Higher-Order Automatic Differentiation" (OOPSLA 2022) by Jacob Laurel, Rem Yang, Shubham Ugare, Robert Nagel, Gagandeep Singh, and Sasa Misailovic. For both the interval and zonotope domains, we implement abstract first- and second-order automatic differentiation. We use our technique to study (1) robustly explaining a neural network via their first and second derivatives and (2) computing the Lipschitz constant of neural networks. Please find the most updated version of our artifact at [this GitHub repository](https://github.com/uiuc-arc/AbstractAD).
 
 Requirements
 -------------------------
