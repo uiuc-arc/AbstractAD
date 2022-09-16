@@ -33,6 +33,16 @@ random.seed(seed)
 torch.manual_seed(seed)
 np.random.seed(seed)
 
+"""
+The code first generates a random multivariate polynomial through the generate_polynomial() function. 
+A neural network to replicate this polynomial is then trained (or loaded). 
+The derivatives of the network's inputs at multiple scalars are computed in the first_nn_der() and second_nn_der() functions using PyTorch, which correspond to the multiple colored dots in Figs. 6 and 7.
+The interval arithmetic instantiation of our framework (which serves as a baseline) for first and second derivatives is computed in both the first_nn_hd_der() and second_nn_hd_der() functions, which produce the black bars in Figs. 6 and 7.
+The zonotope instantiations of our framework are computed in the first_nn_zono_der() and second_nn_zono_der() functions, which produce the red bars in Figs. 6 and 7.
+We take the difference of the black/red bars as the width of the interval/zonotope derivatives; the ratio of these widths are the values in Tables 1 and 2.
+"""
+
+
 class Polynomial(nn.Module):
     def __init__(self, features):
         super().__init__()
