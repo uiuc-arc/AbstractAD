@@ -202,7 +202,7 @@ def plot_first_order(data, bounds, bounds_zono):
         writer.writerow(width_ratios)
 
     # plt.show()
-    plt.savefig('interval_vs_zono.png', dpi=500, bbox_inches='tight')
+    plt.savefig(f'interval_vs_zono_seed{seed}.png', dpi=500, bbox_inches='tight')
 
 def plot_second_order(data, bounds, bounds_zono):
     SMALL_SIZE = 24
@@ -263,7 +263,7 @@ def plot_second_order(data, bounds, bounds_zono):
         writer.writerow(width_ratios)
 
     # plt.show()
-    plt.savefig('interval_vs_zono_2nd.png', dpi=500, bbox_inches='tight')
+    plt.savefig(f'interval_vs_zono_2nd_seed{seed}.png', dpi=500, bbox_inches='tight')
 
 def second_nn_der(net, x, features, eps, samples=100):
     hes = np.zeros((features*features, samples))
